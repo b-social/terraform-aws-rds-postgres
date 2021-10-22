@@ -90,3 +90,8 @@ variable "storage_type" {
     error_message = "Must be one of standard or gp2. Provisioned IOPS (io1) not yet supported."
   }
 }
+
+variable "parameter_group_name" {
+  description = "(Optional) Name of the DB parameter group to associate."
+  default = ""
+}

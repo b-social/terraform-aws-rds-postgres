@@ -72,6 +72,7 @@ for more details.
 | allow_major_version_upgrade     | Whether or not to allow major version upgrades                              | "no"                  | no       |
 | auto_minor_version_upgrade      | Whether or not to enable auto minor version upgrades                        | "yes"                 | no       |
 | storage_type                    | The storage type of the RDS instance ("standard" or "gp2" )                 | "standard"            | no       |
+| parameter_group_name            | (Optional) Name of the DB parameter group to associate.                     | ""                    | no       |
 
 
 ### Outputs

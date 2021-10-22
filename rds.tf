@@ -17,6 +17,8 @@ resource "aws_db_instance" "postgres_database" {
   allow_major_version_upgrade = var.allow_major_version_upgrade == "yes" ? true : false
   auto_minor_version_upgrade = var.auto_minor_version_upgrade == "yes" ? true : false
 
+  parameter_group_name = var.parameter_group_name
+
   vpc_security_group_ids = [
     aws_security_group.postgres_database_security_group.id
   ]
